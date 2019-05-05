@@ -25,7 +25,7 @@ const resetAction = NavigationActions.navigate({ routeName: "Login" });
 export default class Sidebar extends React.Component<Props, State> {
   render() {
     return (
-      <Container onPress = {()=>this.props.navigation.closeDrawer()}>
+      <Container>
         <Content>
           <List
             style={{ marginTop: 40 }}

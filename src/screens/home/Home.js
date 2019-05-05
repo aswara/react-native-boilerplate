@@ -26,11 +26,10 @@ class Home extends React.Component<Props, State> {
       <Container style={styles.container}>
         <Header>
           <Left>
-            <Button transparent>
+            <Button onPress={() => this.props.navigation.openDrawer()} transparent>
               <Icon
                 active
                 name="menu"
-                onPress={() => this.props.navigation.openDrawer()}
               />
             </Button>
           </Left>
